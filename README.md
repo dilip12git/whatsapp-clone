@@ -17,48 +17,49 @@ GChat is a real-time chat application built using the MERN stack (MongoDB, Expre
 - **Authentication:** JWT (JSON Web Tokens)
 - **Realtime Communication:** Socket.io for real-time messaging and communication
 - **Audio/Video Calling:** WebRTC (for peer-to-peer communication)
-- **Storage:** Firebase Storage for profile picture storage
 
 ## Prerequisites
 Before you begin, make sure you have the following installed:
 - Node.js (v14 or higher)
 - MongoDB (or use MongoDB Atlas for cloud database)
-- Firebase account for authentication and storage (optional for profile pictures)
 
 ## Installation
 
 ### 1. Clone the repository
-    ```bash
-    git clone https://github.com/your-username/GChat.git
+
+```bash
+ git clone https://github.com/your-username/GChat.git
+```
 
 ### 2. Install Backend Dependencies
-    ```bash
-    cd server
-    npm start
+ ```bash
+ cd server
+ npm start
+```
 
 ### 3. Setup Environment Variables
 Create a .env file in the backend folder and add the following variables:
 
-    ```bash
-    MONGO_URI=your_mongo_database_url
-    GOOGLE_CLIENT_ID=your_google_client_id
-    GOOGLE_CLIENT_SECRET=your_google_client_secret
-    
+ ```bash
+ MONGO_URI=your_mongo_database_url
+ GOOGLE_CLIENT_ID=your_google_client_id
+ GOOGLE_CLIENT_SECRET=your_google_client_secret
+ ```  
 ### 4. Run the Application
 
 Now, you can run both the backend and frontend servers.
 
 Run the backend (Node.js/Express):
        
-    ```bash
-    cd server
-    npm start
-
+```bash
+cd server
+npm start
+```
 Run the frontend (React.js)
   
-    ```bash
-    npm start
-
+```bash
+npm start
+```
 The app should now be running on http://localhost:3000.
 
 ## Usage
