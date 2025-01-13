@@ -1,75 +1,52 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# GChat - WhatsApp Clone using MERN Stack
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+GChat is a real-time chat application built using the MERN stack (MongoDB, Express, React, Node.js) with additional support for audio and video calling. This app allows users to sign up and log in using their email addresses, instead of phone numbers, and engage in real-time messaging and calling.
 
-## Available Scripts
+## Features
+- **Email-based Authentication:** Users can sign up or log in using their email and password.
+- **Real-time Messaging:** Chat with friends and family in real-time with messages instantly delivered.
+- **Audio and Video Calling:** Make audio and video calls to your contacts.
+- **Profile Management:** Users can set up their profile with a custom display name and photo.
+- **User Invitations:** Send invitation links to new users via email.
+- **Responsive UI:** The app is mobile-friendly and adapts well to different screen sizes.
 
-In the project directory, you can run:
+## Tech Stack
+- **Frontend:** React.js
+- **Backend:** Node.js with Express.js
+- **Database:** MongoDB (using Mongoose for object data modeling)
+- **Authentication:** JWT (JSON Web Tokens)
+- **Realtime Communication:** Socket.io for real-time messaging and communication
+- **Audio/Video Calling:** WebRTC (for peer-to-peer communication)
+- **Storage:** Firebase Storage for profile picture storage
 
-### `npm start`
+## Prerequisites
+Before you begin, make sure you have the following installed:
+- Node.js (v14 or higher)
+- MongoDB (or use MongoDB Atlas for cloud database)
+- Firebase account for authentication and storage (optional for profile pictures)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 1. Clone the repository
+```bash
+git clone https://github.com/your-username/GChat.git
 
-### `npm test`
+### 2. Install Backend Dependencies
+``bash
+cd server
+npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 3. Setup Environment Variables
+Create a .env file in the backend folder and add the following variables:
+```bash
+MONGO_URI=your_mongo_database_url
+JWT_SECRET=your_jwt_secret
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket_url
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# whatsapp-clone
-WhatsApp clone using MERN Stack
->>>>>>> dd9a41f336de32b59dbbc79df9d10efa0cf08fdf
