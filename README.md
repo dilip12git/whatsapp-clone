@@ -86,3 +86,12 @@ Here are some screenshots of the app:
 ![Screenshot 2025-01-13 210838](https://github.com/user-attachments/assets/bf51e7b2-5faa-4638-9e7c-7e3c1509c7df)
 
 ![Screenshot 2025-01-13 210759](https://github.com/user-attachments/assets/12f2316b-ca9e-4458-8b4a-f785ea3b91b1)
+
+### 5. Mobile View
+
+![Screenshot 2025-01-13 223740](https://github.com/user-attachments/assets/f015be45-febc-4752-b773-2fb1c3994bd1)
+
+![Screenshot 2025-01-13 223818](https://github.com/user-attachments/assets/ea7e5515-4828-4dd0-93ac-8673c52295bf)
+
+![Screenshot 2025-01-13 223839](https://github.com/user-attachments/assets/bc1ed290-ab2a-4a85-a446-1aeefb48e79d)
+
