@@ -1,0 +1,427 @@
+.Incomming-call-Modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+  z-index: 1000;
+}
+.Modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.minimize-modal {
+  position: fixed;
+  right: 2%;
+  bottom: 10%;
+  width: 180px;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.call-modal-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 650px;
+  height: 550px;
+  border-radius: 10px;
+  background: #212121;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgb(68, 68, 68);
+  padding: 10px 12px;
+}
+.call-modal-minimize-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: #212121;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgb(68, 68, 68);
+  padding: 5px 6px;
+}
+.AcceptCall-modal-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  height: max-content;
+  border-radius: 10px;
+  background: #212121;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgb(68, 68, 68);
+  padding: 15px;
+  margin-top: 10px;
+}
+.popup-title,
+.call-close-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.call-logs-delete-popup-wrapper,
+.Call-Close-modal-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  height: max-content;
+  border-radius: 10px;
+  background: #212121;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgb(68, 68, 68);
+  padding: 15px;
+  margin-top: 10px;
+}
+.call-app-name {
+  color: white;
+}
+
+.call-modal-header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 8px 0px; */
+}
+.call-app-logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+}
+.call-app-logo {
+  width: 30px;
+  height: 30px;
+}
+
+.call-hanlders-cotainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px;
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+.call-handlers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+  cursor: pointer;
+  color: white;
+}
+.notEnabled-call-handlers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: white;
+  color: #333;
+}
+/* .call-handlers-icon {
+  color: white;
+} */
+.call-hangup-handlers {
+  width: 60px !important;
+  border-radius: 100px !important;
+  background-color: rgb(252, 63, 63);
+}
+/* .video-call-container {
+  flex: 1;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 10px;
+  position: relative;
+  background-color: #2c2c2c;
+} */
+
+/* .local-video-container {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+} */
+
+.remote-video-container {
+  width: 100%;
+  height: 100%;
+}
+.call-modal-stream-container {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  background: #2c2c2c;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.remote-video {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 10px;
+  transform: scaleX(-1);
+  transition: none;
+  cursor: pointer;
+}
+.localVideoIfNotActive {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.local-video {
+  width: 160px;
+  border-radius: 10px;
+  object-fit: contain;
+  transform: scaleX(-1);
+  transition: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+}
+.isCallNotActive {
+  /* width: 350px;
+  border-radius: 10px;
+  transform: scaleX(-1); */
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 10px;
+  transform: scaleX(-1);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.media-turned-off-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.media-status-wrapper {
+  padding: 6px 10px;
+  border-radius: 100px;
+  border: 1px solid rgb(68, 68, 68);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  /* background: #212121; */
+}
+.media-status-txt {
+  color: white;
+  font-size: 12px;
+}
+.local-video-wrapper {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+.media-muted-wapper {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  background-color: rgb(68, 68, 68);
+  z-index: 1;
+  /* border: 1px solid rgb(68, 68, 68); */
+}
+.caller-info-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+.caller-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.call-modal-closer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.caller-picture {
+  width: 50px;
+  border-radius: 100px;
+}
+.caller-name {
+  font-weight: bold;
+  font-size: medium;
+  color: white;
+}
+.caller-desc {
+  font-size: small;
+  color: lightgrey;
+}
+.popup-confirm-and-cancel-btns{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin-top: 15px;
+}
+.incoming-call-btn-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin-top: 15px;
+}
+.popup-confirm-and-cancel-btns button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+}
+.incoming-call-btn-container button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+}
+.popup-confirm-and-cancel-btns button:nth-child(2) {
+  background-color: rgb(252, 63, 63);
+}
+.popup-confirm-and-cancel-btns button:nth-child(1) {
+  background-color: #01a066;
+}
+.incoming-call-btn-container button:nth-child(1) {
+  background-color: rgb(252, 63, 63);
+}
+.incoming-call-btn-container button:nth-child(2) {
+  background-color: #01a066;
+}
+.recipient-info-wrapper {
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.recipient-picture {
+  width: 80px;
+  border-radius: 50%;
+}
+.recipient-name {
+  font-size: 18px;
+  color: white;
+}
+.recipient-desc {
+  color: lightgrey;
+  font-size: 15px;
+}
+.call-not-answered-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+.call-not-ansbtn-if-minimize {
+  width: 75px;
+  padding: 4px 2px;
+  border-radius: 100px;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 10px;
+}
+
+.call-not-answer-btn {
+  width: 150px;
+  padding: 8px 12px;
+  border-radius: 100px;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.call-again {
+  background-color: #01a066;
+}
+.call-cancel {
+  background-color: rgb(252, 63, 63);
+}

@@ -1,0 +1,456 @@
+.call-logs-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow: hidden;
+}
+.call-logs-list-container {
+  position: relative;
+  height: 100vh;
+  padding: 0px 12px;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-right: 1px solid #212121;
+}
+.call-logs-title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 13px;
+}
+
+.call-logs-title span {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+.add-call-btn {
+  background: #333;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+.user-contact-list-title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-top: 13px; */
+}
+.user-contact-list-container {
+  width: 250px;
+  max-height: 350px;
+  min-height: 250px;
+  background: #2c2c2c;
+  position: absolute;
+  top: 0%;
+  right: 0;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.445) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  transform-origin: top right;
+  animation: scale-up 0.3s 1;
+  /* border: 1px solid rgb(68, 68, 68); */
+}
+
+@keyframes scale-up {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.user-contact-list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: flex-start;
+  gap: 8px;
+  padding: 8px;
+  border-radius: 4px;
+}
+.user-contact-list-item:hover {
+  background: #333;
+}
+.user-contact-list {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.call-logs-user-contact-profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.contact-list-call-media {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  width: max-content;
+  align-items: center;
+  justify-content: end;
+  margin-left: auto;
+  background: #333;
+  border-radius: 8px;
+}
+.media-icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+.call-logs-search-wrapper {
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  border-radius: 5px;
+  background: #212121;
+  border-bottom: 1px solid #01a066;
+}
+.call-logs-search-icon {
+  color: grey;
+  font-size: 20px;
+}
+.call-logs-search-box {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: transparent;
+  color: white;
+}
+::placeholder {
+  color: grey;
+  font-weight: 200;
+  font-size: 14px;
+}
+.call-logs-recent-title {
+  color: lightgrey;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.call-logs-list {
+  width: 100%;
+  /* height: 50vh; */
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.call-logs-list-item {
+  padding: 12px 6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.call-logs-list-item.call-logs-list-item-active {
+  border-radius: 5px;
+  background: rgb(68, 68, 68);
+}
+
+.call-logs-list-item:hover {
+  border-radius: 5px;
+  background: rgb(68, 68, 68);
+}
+.call-logs-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+.call-logs-caller-name-and-date {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.call-logs-caller-name {
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  min-width: 90px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.call-logs-dates {
+  color: lightgrey;
+  font-size: 12px;
+}
+
+.call-status {
+  font-size: 13px;
+  color: lightgrey;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+}
+
+.call-logs-caller-profile {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.call-logs-info-container {
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+}
+.call-logs-info-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.call-info-txt {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+.call-logs-open-user-info-wrapper {
+  margin-top: 20px;
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.445) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.call-logs-open-user-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+}
+.call-logs-open-user-info {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.call-logs-open-caller-name {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+.call-logs-chat-medium-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: flex-end;
+  gap: 15px;
+}
+.medium-icon-wrapper {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.medium-icon-wrapper:hover {
+  background-color: #333;
+}
+.call-logs-details-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 12px;
+  gap: 15px;
+  border-top: 1px solid #212121;
+}
+.user-block-status {
+  width: max-content;
+  margin-left: auto;
+  color: rgb(255, 152, 152);
+  font-size: small;
+  padding: 8px 12px;
+  margin-top: -20px;
+}
+.call-logs-date {
+  color: lightgrey;
+  font-size: 14px;
+}
+.call-logs-calltypes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  color: white;
+  font-size: 16px;
+}
+.call-logs-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.call-logs-details-call-status {
+  color: white;
+}
+
+.clear-call-logs {
+  background: transparent;
+  color: #01a066;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 12px;
+}
+.clear-call-logs:hover {
+  color: rgb(255, 152, 152);
+}
+.call-history-if-not-selected {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  border-radius: 10px;
+  gap: 10px;
+}
+.call-history-if-not-selected-text {
+  color: lightgrey;
+  font-size: 18px;
+}
+.call-logs-title-and-arrow {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.call-logs-back-arrow {
+  display: none;
+}
+@media (max-width: 1100px) {
+  .call-logs-list-container {
+    width: 35vw;
+  }
+
+  .call-logs-info-container {
+    width: 65vw;
+  }
+  /* .chat-not-selected-wrapper {
+    width: 65vw;
+  }
+
+  .chat-top-wrapper {
+    height: 16vh;
+  } */
+}
+@media (max-width: 850px) {
+  .call-logs-list-container {
+    width: 45vw;
+  }
+
+  .call-logs-info-container {
+    width: 55vw;
+  }
+  .call-logs-calltypes,
+  .call-logs-details-call-status {
+    font-size: 12px;
+  }
+  .call-logs-chat-medium-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: flex-end;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 668px) {
+  .call-logs-list-container {
+    width: 100vw;
+    border-right: none;
+  }
+
+  .call-logs-info-container {
+    width: 91vw;
+    height: 100vh;
+    position: fixed;
+    right: -100%;
+    left: auto;
+    opacity: 0;
+    z-index: 99;
+    background: #2c2c2c;
+    transition: ease-in-out 0.1s;
+    border: none;
+    padding: 18px 0px;
+    border-radius: none;
+  }
+  .call-logs-info-container.call-logs-info-container-active {
+    right: 0;
+    opacity: 1;
+    left: auto;
+  }
+  .call-logs-back-arrow {
+    display: block;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px;
+  }
+  .call-logs-back-arrow:hover {
+    background-color: #333;
+  }
+
+  .call-logs-open-user-info-wrapper {
+    margin: 15px;
+  }
+  .call-logs-info-title {
+    padding: 0px 12px;
+  }
+}
+
+@media (max-width: 470px) {
+  .call-logs-info-container {
+    width: 100vw;
+  }
+}

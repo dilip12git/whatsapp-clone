@@ -1,0 +1,85 @@
+.setting-container{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width:100vw;
+    /* height: 100vh; */
+    background: #2c2c2c;
+    padding: 12px 20px;
+    gap: 20px;
+
+}
+.setting-title{
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 5px;
+
+}
+.setting-user-profile-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 500px;
+    min-width: 300px;
+    padding: 20px 25px;
+    /* box-shadow: rgba(0, 0, 0, 0.445) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 10px; */
+}
+.setting-uPic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.setting-input-box-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+
+
+}
+.setting-label{
+    color: lightgrey;
+    font-size: 14px;
+}
+.setting-input-box{
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #01a066;
+    color: white;
+    padding: 12px 0px;
+    outline: none;
+    width: 100%;
+
+}
+.setting-input-box-wrapper button{
+    background: #333;
+    color: #01a066;
+    outline: none;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: max-content;
+    margin-left: auto;
+}
+.save-picture-btn{
+    background: #01a066;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: max-content;
+    margin-left: auto;
+    position: absolute;
+    left: 0;
+    top: 0%;
+}
