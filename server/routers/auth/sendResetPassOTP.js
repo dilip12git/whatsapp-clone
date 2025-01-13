@@ -3,15 +3,15 @@ const nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'dilipatportfolio@gmail.com',
-        pass: 'qonxbjlxmzbnkkhc',
+        user: 'your_email',
+        pass: 'your_password',
     },
 });
 
 const sendResetPassOTP = (userEmail, otp) => {
 
     let mailOptions = {
-        from: 'dilipatportfolio@gmail.com',
+        from: 'your_email',
         to: userEmail,
         subject: 'Email Verification',
         html: `<!DOCTYPE html>
